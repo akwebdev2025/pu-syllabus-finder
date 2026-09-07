@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Find Panjab University syllabus documents by faculty, programme, year, category and semester.">
+<title>PU Syllabus Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="./"><span class="logo-box">PU</span><span><strong>PU Syllabus</strong><small>Finder</small></span></a>
+  <button id="themeToggle" class="icon-button" aria-label="Toggle dark mode">🌙</button>
+</header>
+<main>
+<section class="hero">
+  <span class="eyebrow">PANJAB UNIVERSITY • CHANDIGARH</span>
+  <h1>Find Your <span>Syllabus.</span></h1>
+  <p>Search official Panjab University syllabus documents by programme, year, category and semester.</p>
+  <div class="search"><span>🔎</span><input id="searchInput" type="search" placeholder="Search BSc, BBA, Physics, Economics..." autocomplete="off"><button id="clearSearch">×</button></div>
+</section>
+<section class="finder">
+  <div class="section-title"><div><h2>Syllabus Finder</h2><p>Choose your requirements.</p></div><button id="resetButton" class="reset-button">Reset</button></div>
+  <div class="filters">
+    <label><span>Faculty</span><select id="facultySelect"><option value="">All Faculties</option></select></label>
+    <label><span>Programme</span><select id="programmeSelect"><option value="">All Programmes</option></select></label>
+    <label><span>Academic Year</span><select id="yearSelect"><option value="">All Years</option></select></label>
+    <label><span>Category</span><select id="categorySelect"><option value="">All Categories</option></select></label>
+    <label><span>Semester</span><select id="semesterSelect"><option value="">All Semesters</option></select></label>
+  </div>
+</section>
+<section class="results">
+  <div class="results-heading"><div><h2>Syllabi</h2><p><strong id="resultCount">0</strong> results</p></div></div>
+  <div id="resultsContainer" class="cards"></div>
+  <div id="noResults" class="empty hidden"><div>🔍</div><h3>No syllabus found</h3><p>Try another search or clear the filters.</p><button id="emptyReset">Clear Filters</button></div>
+</section>
+</main>
+<footer>
+  <strong>PU Syllabus Finder</strong>
+  <p>Data is collected from the official Panjab University syllabus website.</p>
+  <a href="https://puchd.ac.in/nep-syllabus.php" target="_blank" rel="noopener noreferrer">Official PU Syllabus Website ↗</a>
+  <small>Always verify the latest syllabus on the official PU website.</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
